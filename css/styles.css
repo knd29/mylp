@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  font-family: 'Crimson Text', serif;
+  margin: 0;
+  font-size: 0.95rem;
+  color: rgb(70, 70, 70);
+}
+h2.sec-title{
+  font-weight: normal;
+}
+h2 span {
+  display: block;
+}
+span.en {
+  font-size: 1rem;
+}
+li {
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(70, 70, 70);
+}
+img {
+  object-fit: cover;
+  max-width: 100%;
+}
+.inner {
+  max-width: 1000px;
+  margin: 8% auto 0;
+  padding: 0 2%;
+}
+
+/*-------------
+    header
+-------------*/
+#header {
+  margin: 5% auto;
+}
+#header h1.site-title {
+  margin: 0;
+  line-height: 1px;
+  width: 110px;
+}
+.site-title a {
+  display: block;
+}
+#header .mainvisual {
+  width: 90vw;
+  margin: 0 auto;
+}
+#header .flex {
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+#header ul {
+  display: flex;
+  margin: 0;
+  padding-left: 20px;
+}
+#header li {
+  margin-left: 30px;
+}
+
+/*-------------
+    main
+-------------*/
+
+/* consept */
+ #concept {
+   display: flex;
+   flex-wrap: wrap;
+  justify-content: space-between;
+ }
+ #concept .image {
+   width: 50%;
+ }
+ 
+ #concept .text {
+   width: 34%;
+   padding: 0 8%;
+   align-self: center;
+ }
+
+ /* work */
+ #work {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+ justify-content: space-between;
+}
+#work .image {
+  width: 49%;
+}
+#work .text {
+  width: 34%;
+  padding: 0 8%;
+  align-self: center;
+}
+
+/*------------
+    footer
+-----------*/
+#footer {
+  margin: 15% 0 2%;
+}
+#footer .flex{
+  display: flex;
+  justify-content: space-between;
+}
+#footer .logo{
+  width: 110px;
+}
+#footer p {
+  margin: 0;
+  text-align: right;
+}
+
+@media screen and (max-width: 767px) {
+  /* header */
+  #header {
+    margin: 0;
+  }
+  #header .mainvisual {
+    width: 100%;
+  }
+
+  /* consept */
+  #concept {
+    flex-direction: column;
+  }
+  #concept .image,
+  #concept .text {
+    width: 98%;
+    padding: 0 1%;
+  }
+  
+  /* work */
+  #work {
+    flex-direction: column;
+  }
+  #work .image,
+  #work .text {
+    width: 98%;
+    padding: 0 1%;
+  }
+}
